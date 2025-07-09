@@ -14,7 +14,7 @@
       "automerge": true,
       "matchPackageNames": [
         "kube-prometheus-stack",
-	"gateway-helm"
+	"docker.io/envoyproxy/gateway-helm"
       ]
     },
     {
