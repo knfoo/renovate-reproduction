@@ -1,0 +1,17 @@
+apiVersion: v2
+name: kube-prometheus-stack
+version: v0.82.2
+dependencies:
+  - name: kube-prometheus-stack
+    version: "75.8.1"
+    alias: prom-stack
+    repository: https://prometheus-community.github.io/helm-charts
+  - name: loki
+    alias: loki-stack
+    version: "6.31.0"
+    repository: https://grafana.github.io/helm-charts
+    # Changelog can be found: https://github.com/grafana/loki/blob/main/production/helm/loki/CHANGELOG.md
+  - name: promtail
+    alias: promtail
+    version: "6.17.0"
+    repository: https://grafana.github.io/helm-charts

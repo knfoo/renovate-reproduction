@@ -1,1 +1,32 @@
-{}
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    ":dependencyDashboard"
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "patch"
+      ],
+      "ignoreTests": true,
+      "enabled": true,
+      "automerge": true,
+      "matchPackageNames": [
+        "kube-prometheus-stack",
+	"gateway-helm"
+      ]
+    },
+    {
+      "matchUpdateTypes": [
+        "minor"
+      ],
+      "ignoreTests": true,
+      "enabled": true,
+      "automerge": true,
+      "matchPackageNames": [
+        "kube-prometheus-stack"
+      ]
+    }
+  ]
+}
