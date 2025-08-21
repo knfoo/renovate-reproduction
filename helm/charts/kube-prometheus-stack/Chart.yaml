@@ -8,7 +8,7 @@ dependencies:
     repository: https://prometheus-community.github.io/helm-charts
   - name: loki
     alias: loki-stack
-    version: "6.31.0"
+    version: "6.37.0"
     repository: https://grafana.github.io/helm-charts
     # Changelog can be found: https://github.com/grafana/loki/blob/main/production/helm/loki/CHANGELOG.md
   - name: promtail
